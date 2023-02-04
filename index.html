@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DA Travel</title>
-  <style>
-    /* Style for the main container */
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #333;
-      color: white;
-      padding: 20px;
-    }
-
-    /* Style for the main promotion */
-    .promotion {
-      background-color: #444;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    /* Style for the map section */
-    .map {
-      background-color: #444;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    /* Style for the contact section */
-    .contact {
-      background-color: #444;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
-    /* Style for the green accents */
-    .green {
-      color: #3d9140;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Main Promotion -->
-    <div class="promotion">
-      <h2>New Trip to Malta</h2>
-      <p>Visit Malta for only 159.99€!</p>
-      <p>Explore the historic cities, relax on the beautiful beaches, and discover the unique culture of this Mediterranean island.</p>
-      <p><a href="#" class="green">Book now</a></p>
-    </div>
-
-    <!-- Map -->
-    <div class="map">
-      <h2>Request a Trip</h2>
-      <p>Where do you want to go?</p>
-      <p>Tell us your destination and budget, and we'll make it happen.</p>
-      <p><a href="#" class="green">Submit request</a></p>
-    </div>
-
-    <!-- Contact -->
-    <div class="contact">
-      <h2>Contact Us</h2>
-      <p>Have a question or want to book a reservation?</p>
-      <p>Send us an email at <a href="mailto:datravelcontact@gmail.com" class="green">datravelcontact@gmail.com</a></p>
-    </div>
-  </div>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA Travel</title>
+    <style>
+      /* Full-screen layout */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #333;
+        color: #fff;
+      }
+      
+      /* Main container */
+      .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      /* Main header */
+      header {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #00cc44;
+        text-align: center;
+      }
+      
+      /* Promotion section */
+      .promotion {
+        background-color: #fff;
+        width: 80%;
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #333;
+        color: #333;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      
+      /* Map section */
+      .map {
+        background-color: #fff;
+        width: 80%;
+        max-width: 600px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #333;
+        color: #333;
+        text-align: center;
+        margin-bottom: 40px;
+        position: relative;
+      }
+      
+      /* Map image */
+      .map img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      
+      /* Map form */
+      .map form {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        max-width: 300px;
+      }
+      
+      /* Map form input */
+      .map form input[type="text"], .map form input[type="number"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 20px;
+      }
+      
+      /* Map form button */
+      .map form button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: #00cc44;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      /* Footer */
+      footer {
+        position: absolute;

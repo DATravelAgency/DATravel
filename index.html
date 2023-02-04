@@ -1,88 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head><link rel="stylesheet" type="text/css" href="style.css">
-
+  <head>
     <meta charset="UTF-8">
     <title>DA Travel</title>
     <style>
-      /* Add custom styles here */
       body {
-        font-family: Arial, sans-serif;
-        background-color: black;
-        color: white;
-      }
-      .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
         background-color: gold;
-      }
-      .header h1 {
-        margin: 0;
-      }
-      .promotion {
-        background-color: white;
-        padding: 20px;
+        color: white;
+        font-family: sans-serif;
         text-align: center;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-      .promotion h2 {
-        margin: 0;
-        font-weight: bold;
+      
+      header {
+        background-color: black;
+        padding: 1em;
       }
-      .promotion p {
-        margin: 0;
-        font-size: 1.2em;
+      
+      .promotion {
+        padding: 1em;
+        background-color: black;
       }
+      
       .map {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px;
+        padding: 1em;
       }
-      .form {
-        background-color: white;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      
+      .request-form {
+        background-color: black;
+        padding: 1em;
       }
-      .form input[type="text"],
-      .form input[type="number"] {
+      
+      form input, form textarea {
         width: 100%;
-        padding: 10px;
+        padding: 0.5em;
+        margin-bottom: 1em;
         font-size: 1.2em;
-        margin-bottom: 20px;
       }
-      .form button {
-        background-color: gold;
-        color: white;
-        padding: 10px 20px;
-        border: none;
+      
+      form input[type="submit"] {
+        background-color: white;
+        color: black;
+        padding: 0.5em;
         cursor: pointer;
       }
     </style>
   </head>
   <body>
-    <div class="header">
+    <header>
       <h1>DA Travel</h1>
-    </div>
-    <div class="promotion">
+    </header>
+    <section class="promotion">
       <h2>New Trip to Malta</h2>
-      <p>159.99 Euros</p>
-    </div>
-    <div class="map">
-      <!-- Add a map of the world here -->
-    </div>
-    <div class="form">
-      <h2>Request a Trip</h2>
+      <p>159.99 euros</p>
+    </section>
+    <section class="map">
+      <iframe src="https://maps.google.com/maps?q=malta&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </section>
+    <section class="request-form">
+      <h3>Request a Trip</h3>
       <form action="#">
-        <input type="text" placeholder="Destination">
-        <input type="number" placeholder="Budget">
-        <button type="submit">Submit</button>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Where would you like to go?"></textarea>
+        <input type="submit" value="Submit">
       </form>
-    </div>
+    </section>
   </body>
 </html>
